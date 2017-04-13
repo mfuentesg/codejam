@@ -21,18 +21,25 @@ Limits
 
 Small dataset
 
+```
 1 ≤ L ≤ 10
 1 ≤ D ≤ 25
 1 ≤ N ≤ 10
+```
+
 Large dataset
 
+```
 1 ≤ L ≤ 15
 1 ≤ D ≤ 5000
 1 ≤ N ≤ 500
+```
+
+
 Sample
+```
+Input:
 
-
-Input 
 3 5 4
 abc
 bca
@@ -43,12 +50,13 @@ cba
 abc
 (abc)(abc)(abc)
 (zyx)bc
-
+```
  	
 Output 
  
+```
 Case #1: 2
 Case #2: 1
 Case #3: 3
 Case #4: 0
-
+```
