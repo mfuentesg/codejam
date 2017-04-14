@@ -1,15 +1,7 @@
 import re
 
-def to_regex(pattern):
-    pr = pattern
-
-    for pi in re.findall(r'\(\w+\)', pattern):
-        pr = pr.replace(pi, '({})'.format('|'.join(pi[1:-1])))
-
-    return pr
-
 def matcher(pattern):
-    r = re.compile(to_regex(pattern))
+    r = re.compile(pattern.replace('(', '[').replace(')', ']'))
     return len(list(filter(r.match, known_words)))
 
 L, D, N = [int(c) for c in input().strip().split(' ')]
